@@ -7,7 +7,7 @@ import { fetchJobListings, sendToTelex } from "./job.js";
 const app = express();
 app.use(express.json());
 
-cron.schedule("*/3 * * * * *", async () => {
+cron.schedule("0 */3 * * *", async () => {
   try {
     console.log("Fetching job listings...");
     const jobListings = await fetchJobListings();
