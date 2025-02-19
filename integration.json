@@ -1,0 +1,37 @@
+{
+    "data": {
+      "date": {
+        "created_at": "2025-02-19",
+        "updated_at": "2025-02-19"
+      },
+      "descriptions": {
+        "app_name": "tech-jobs",
+        "app_description": "This is a daily job update",
+        "app_logo": "\"\"",
+        "app_url": "https://remotejobs-jckq.onrender.com",
+        "background_color": "#fff"
+      },
+      "is_active": true,
+      "integration_type": "interval",
+      "key_features": [
+        "jobs",
+        "updates"
+      ],
+      "author": "DevGracies",
+      "settings": [
+        {
+          "label": "time interval",
+          "type": "multi-checkbox",
+          "required": true,
+          "default": "daily",
+          "options": [
+            "daily",
+            "weekly",
+            "monthly"
+          ]
+        }
+      ],
+      "target_url": "''",
+      "tick_url": "https://remotejobs-jckq.onrender.com"
+    }
+  }
