@@ -13,6 +13,7 @@
       },
       "is_active": true,
       "integration_type": "interval",
+      "integration_category": "Human Resources & Payroll",
       "key_features": [
         "jobs",
         "updates"
