@@ -4,7 +4,7 @@ import cron from "node-cron";
 import fs from "fs";
 import path from "path";
 import { fetchJobListings, sendToTelex } from "./job.js";
-import cors from "cors"
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
@@ -32,7 +32,7 @@ app.get("/integration.json", (req, res) => {
   });
 });
 
-cron.schedule("0 */3 * * *", async () => {
+cron.schedule("* * * * *", async () => {
   try {
     console.log("Fetching job listings...");
     const jobListings = await fetchJobListings();
