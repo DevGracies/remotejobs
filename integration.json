@@ -24,7 +24,7 @@
         "label": "Time interval",
         "type": "text",
         "required": true,
-        "default": "minutes"
+        "default": "* * * * *"
       }
     ],
     "target_url": "https://ping.telex.im/v1/webhooks/01952f07-3440-7295-8f0e-6551c9195d49",
