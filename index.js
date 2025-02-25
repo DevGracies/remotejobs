@@ -10,14 +10,13 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-const options = {
-  origin: ["http://localhost:3000", "https://telex.im"], 
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
+// const options = {
+//   origin: [`http://localhost:${process.env.PORT || 3000}`, "https://telex.im"],
+//   methods: ["GET", "POST"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+// };
 
-
-app.use(cors(options));
+app.use(cors());
 
 app.get("/integration.json", (req, res) => {
   const filePath = path.join(process.cwd(), "integration.json");
