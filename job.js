@@ -33,4 +33,5 @@ export async function sendToTelex(job) {
 }
 
 // fetchJobListings().then(console.log);
+sendToTelex().then(console.log);
 console.log(config);

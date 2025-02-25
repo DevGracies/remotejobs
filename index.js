@@ -1,11 +1,12 @@
 import express from "express";
 import cron from "node-cron";
+import "dotenv/config";
 import fs from "fs";
 import path from "path";
 import { fetchJobListings, sendToTelex } from "./job.js";
 import cors from "cors";
-import dotenv from "dotenv";
-dotenv.config();
+// import dotenv from "dotenv";
+// dotenv.config();
 
 const app = express();
 app.use(express.json());
