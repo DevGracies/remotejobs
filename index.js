@@ -1,19 +1,21 @@
 import express from "express";
-import "dotenv/config";
 import cron from "node-cron";
 import fs from "fs";
 import path from "path";
 import { fetchJobListings, sendToTelex } from "./job.js";
 import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 app.use(express.json());
 
 const options = {
-  origin: [`http://localhost:${process.env.PORT || 3000}`, "https://telex.im"],
+  origin: ["http://localhost:3000", "https://telex.im"], 
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
+
 
 app.use(cors(options));
 
