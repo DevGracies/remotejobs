@@ -27,7 +27,7 @@
         "default": "* * * * *"
       }
     ],
-    "target_url": "https://ping.telex.im/v1/webhooks/01952f07-3440-7295-8f0e-6551c9195d49",
+    "target_url": "https://ping.telex.im/v1/webhooks/01951458-8280-7e8d-a754-fae4066cc2c8",
     "tick_url": "https://remotejobs-jckq.onrender.com"
   }
 }
